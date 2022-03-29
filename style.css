@@ -1,0 +1,241 @@
+:root {
+  --main-color: #FF4321;
+  --tow-color: #ad937b;
+  --lightColor: #ffffff;
+  --bgColorOne: #171a17;
+  --bgColorTow: #22282a;
+  --padding: 8%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color: var(--lightColor);
+}
+h1{
+  font-size: 4.65rem;
+  margin: 1.7rem 0;
+}
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+h4{
+  font-size: 1.25rem;
+  letter-spacing: 0.12rem;
+  color:var(--tow-color);
+  
+}
+h2{
+  font-size: 2.2rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+h5{
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+p{
+  color: var(--tow-color);
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+}
+span{
+  color: var(--main-color);
+}
+
+
+nav{
+  padding-top: 2.8rem;
+  padding-right: var(--padding);
+  padding-left: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--lightColor);
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+nav ul li a:hover{
+  color: var(--main-color);
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgColorOne);
+  display: flex;
+  flex-direction: column;
+}
+.btn{
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--lightColor);
+  padding: 0.81rem 1.87rem;
+  border-radius: 30px;
+  transition: 0.5s;
+  border: 2px solid transparent;
+}
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+}
+.content{
+  flex-grow: 1; 
+  padding: 0 var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text{
+  position: relative;
+  bottom: 50px;
+}
+.social{
+  margin-top: 3.5rem;
+}
+.social i {
+  color:var(--lightColor);
+  margin-right: 2rem; 
+  font-size: 2.5rem;
+  transition: 0.4s;
+}
+.social i:hover{
+  color: var(--main-color);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.home .images{
+  width: 45%;
+  height: 90%;
+  position: relative;
+  align-self: flex-end;
+}
+.home .images img{
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.home .images:hover .shape{
+  bottom: 40px;
+}  
+
+.home .images:hover .man{
+  left: 45%;
+}
+
+.about{
+  background-color: var(--bgColorTow);
+  padding: 2rem var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about .images{
+  width: 35%;
+}
+.about .images img {
+  width: 90%;
+}
+.about .text{
+  width: 35%;
+}
+.services{
+  background-color: var(--bgColorOne);
+  padding: 2rem var(--padding);
+}
+.text-center{
+  text-align: center;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  width: 300px;
+  background-color: var(--bgColorTow);
+  border-radius: 20px;
+  padding: 1.3rem 2rem;
+  text-align: center;
+}
+.card i{
+  font-size: 3.12rem;
+  text-align: center;
+  color: var(--main-color);
+  margin: 2rem;
+}
+.skills{
+  background-color: var(--bgColorTow);
+  padding: 2rem var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills .images{
+  width: 70%;
+}
+.skills .images img {
+  width: 100%;
+}
+
+.content-skills{
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .content-skills{
+  width: 70%;
+}
+.skill{
+  width: 90px;
+  height: 90px;
+  background-color: var(--lightColor);
+  border-radius: 50%;
+  margin:0 2rem 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill img{
+  width: 70%;
+}
+footer{
+  padding:  2rem var(--padding);
+  background-color: var(--bgColorOne);
+}
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .content p{
+  text-align: center;
+  width: 600px;
+  margin-top: 1rem;
+  color: var(--lightColor);
+}
+footer .content .end{
+  margin-top: 1rem;
+  color: var(--main-color);
+}
